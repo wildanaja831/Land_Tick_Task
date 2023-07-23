@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+
+.bg{
+  background-color: #ED7A9D;
+  font-family: 'Belanosima', sans-serif;
+  height: 100%;
+}
+
+.font-all{
+  font-family: 'Belanosima', sans-serif;
+}
+
+.vertical-line{
+  width: 1px;
+  background-color: gray;
+  height: 100%;
+}
+
+.list-text{
+  width: 100px;
+  height: 100px;
+}
