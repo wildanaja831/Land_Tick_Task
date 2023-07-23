@@ -33,7 +33,7 @@ function Navbars (){
     return (
             <Navbar className="bg-body-tertiary shadow">
                 <Container>
-                    <Navbar.Brand ><Link to={state.user.role === "admin" ? "admin" : "/"} style={{ textDecoration: 'none' }}><img src={LogoName} alt='..' style={{ width: 100 }} /> <img src={Logo} alt='..' style={{ width: 55 }}/></Link></Navbar.Brand>
+                    <Navbar.Brand ><Link to={state.user.role === "admin" ? "/admin" : "/"} style={{ textDecoration: 'none' }}><img src={LogoName} alt='..' style={{ width: 100 }} /> <img src={Logo} alt='..' style={{ width: 55 }}/></Link></Navbar.Brand>
                     <Navbar.Collapse className="justify-content-end">
                         {state.isLogin ?
                             <div>
