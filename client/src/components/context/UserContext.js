@@ -8,7 +8,7 @@ const initialState = {
 };
 
 const reducer = (state, action) => {
-  const { type, payload} = action;
+  const { type, payload } = action;
 
   switch (type) {
     case "USER_SUCCESS":
@@ -33,5 +33,9 @@ const reducer = (state, action) => {
 export const UserContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  return <UserContext.Provider value={[state, dispatch]}>{children}</UserContext.Provider>;
+  return (
+    <UserContext.Provider value={[state, dispatch]}>
+      {children}
+    </UserContext.Provider>
+  );
 };

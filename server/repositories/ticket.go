@@ -33,7 +33,7 @@ func (r *repository) CreateTicket(tickets models.Ticket) (models.Ticket, error) 
 
 func (r *repository) SearchTicket(date string, startStationsID, endStationID, qty int) ([]models.Ticket, error) {
 	var tickets []models.Ticket
-	err := r.db.Where("start_date=? AND start_station_id=? AND destination_station_id=? AND qty >= ?", date, startStationsID, endStationID, qty).Preload("StartStation").Preload("DestinationStation").Preload("User").Find(&tickets).Error
+	err := r.db.Where("start_date=? AND start_station_id=? AND destination_station_id 6nhn=? AND qty >= ?", date, startStationsID, endStationID, qty).Preload("StartStation").Preload("DestinationStation").Preload("User").Find(&tickets).Error
 
 	return tickets, err
 }
